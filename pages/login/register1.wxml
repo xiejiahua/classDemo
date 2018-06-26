@@ -1,0 +1,22 @@
+<view class="page">
+  <view class='icon_view'>
+    <image class='icon' src='../../resource/common/icon_app.png'></image>
+  </view>
+
+  <view class='phone_view'>
+    <image class='phone_icon' src='../../resource/common/icon_phone.png'></image>
+    <input class='input_phone' placeholder='请输入手机号' bindinput='phoneInput'></input>
+  </view>
+
+  <view class='btn_next' bindtap='clickToNext'>下一步</view>
+
+
+  <view class='login_tip'>
+    <view style='  display: flex;flex-direction: row;'>
+      <view>已有账号了,</view>
+      <view class='tip_btn' bindtap='clickToAccount'>账号登录</view>
+    </view>
+  </view>
+
+
+</view>

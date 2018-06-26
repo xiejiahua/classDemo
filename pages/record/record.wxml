@@ -1,0 +1,16 @@
+<view class="page">
+  <view class='top_view'>
+    <image class='top_img' src='../../resource/common/scan.png' bindtap='clickToScan'></image>
+    <image class='top_img' src='../../resource/common/icon_add_pic.png' bindtap='clickToPic'></image>
+  </view>
+
+  <view class='list_view'>
+    <block wx:for="{{recordList}}" wx:key="">
+      <view wx:if="{{item.type==0}}" class='item_text' bindtap='clickToDetail'>{{item.text}}</view>
+      <view wx:else class='item_img_view'>
+        <image class='item_img' wx:for="{{item.imgs}}" wx:key="" wx:for-item="onePic" src='{{onePic}}' bindtap='clickToPreview' data-url='{{onePic}}'></image>
+      </view>
+    </block>
+  </view>
+
+</view>

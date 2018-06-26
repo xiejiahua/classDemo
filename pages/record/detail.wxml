@@ -1,0 +1,12 @@
+<view class='page'>
+  <scroll-view scroll-y>
+
+  <block wx:for="{{detailList}}">
+    <view class="part">
+      <view class="part_num">{{index}}</view>
+      <text class="part_con">{{item}}</text>
+    </view>
+    </block>
+   
+  </scroll-view>
+</view>

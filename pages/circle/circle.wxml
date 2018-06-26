@@ -1,0 +1,18 @@
+<scroll-view scroll-x class='tab_scroll'>
+  <block wx:for="{{tabList}}" wx:key="key">
+    <view class="tab_item {{curTabIdx==index?'on':''}}" id='{{index}}' bindtap='clickTab'>{{item}}</view>
+  </block>
+</scroll-view>
+
+<view class='page'>
+  <block wx:for="{{newsList}}" wx:for-item="info" wx:for-index="index" wx:key="">
+
+    <view class='cellItemView' bindtap="itemClick" id="{{info.id}}">
+      <view class='item_left'>
+        <view class="titleView">{{info.title}}</view>
+        <view class='writer'>来自国内新鲜事</view>
+      </view>
+      <image class='newsImg' src="{{info.img}}" mode="aspectFill"></image>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,43 @@
+.page {
+  background-color: #d95940;
+  padding: 3% 10px;
+}
+
+scroll-view {
+  background-color: #fef2da;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+
+.part {
+  display: flex;
+  margin-top: 10px;
+}
+
+.part_num {
+  width: 20px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 20px;
+  border-radius: 50%;
+  background-color: #d95940;
+  margin: 5px;
+  color: white;
+  height: 20px;
+}
+
+.part_con {
+  width: 85%;
+  padding: 5px 10px 0 5px;
+  text-align: justify;
+  font-size: 13px;
+  white-space: pre-line;
+}
+

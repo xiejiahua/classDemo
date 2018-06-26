@@ -1,0 +1,70 @@
+<view class="page">
+  <swiper class="swiper" indicator-dots="{{true}}" autoplay="true" interval="5000" duration="500">
+    <block wx:for="{{imgUrls}}" wx:key="id">
+      <swiper-item>
+        <image src="http://img.zcool.cn/community/0117e2571b8b246ac72538120dd8a4.jpg@1280w_1l_2o_100sh.jpg" mode="aspectFill" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='sign_view'>
+    <image class='head_icon' src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2377495263,4293988158&fm=27&gp=0.jpg'></image>
+    <view class='info_view'>
+      <view class='nick_age'>18岁6个月</view>
+      <view class='use_day'>已签到10天</view>
+    </view>
+
+    <button class='sign_btn' bindtap='clickToSign'>签到</button>
+  </view>
+
+  <view class="menuView" wx:if="{{!loadMenuSuccess}}">
+    <button class="btnView">
+      <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3051204791,2389725747&fm=27&gp=0.jpg"></image>
+      <text>按钮1</text>
+    </button>
+
+    <button class="btnView">
+      <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3051204791,2389725747&fm=27&gp=0.jpg"></image>
+      <text>按钮1</text>
+    </button>
+
+    <button class="btnView">
+      <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3051204791,2389725747&fm=27&gp=0.jpg"></image>
+      <text>按钮1</text>
+    </button>
+
+    <button class="btnView">
+      <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3051204791,2389725747&fm=27&gp=0.jpg"></image>
+      <text>按钮1</text>
+    </button>
+
+  </view>
+
+  <view class='rec_view'>
+    <view class='rec_title'>
+      <view class='rec_text'>推荐</view>
+    </view>
+
+    <block wx:for="{{newsList}}" wx:for-item="info" wx:for-index="index" wx:key="">
+
+      <view class='cellItemView' bindtap="itemClick" id="{{info.id}}">
+        <view class='item_left'>
+          <view class="titleView">{{info.title}}</view>
+          <view class='writer'>来自国内新鲜事</view>
+        </view>
+        <image class='newsImg' src="{{info.img}}" mode="aspectFill"></image>
+      </view>
+    </block>
+
+  </view>
+
+
+
+
+
+
+
+
+
+
+</view>

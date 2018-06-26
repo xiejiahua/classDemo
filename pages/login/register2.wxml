@@ -1,0 +1,16 @@
+<view class="page">
+  <view class='des_view'>
+      <view class='des'>短信验证码已发送至</view>
+      <view class='phone_num'>{{phoneNum}}</view>
+  </view>
+
+  <view class='phone_view'>
+    <image class='phone_icon' src='../../resource/common/icon_phone.png'></image>
+    <input class='input_code' placeholder='请输入验证码' bindinput='codeInput'></input>
+    <view class='resend_btn' bindtap='clickToResend'>{{btnWord}}重新发送</view>
+  </view>
+
+  <view class='btn_next' bindtap='clickToNext'>下一步</view>
+
+
+</view>

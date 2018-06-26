@@ -1,0 +1,89 @@
+
+
+.page{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.des_view{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  font-size: 14px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.des{
+  color: black;
+}
+
+.phone_num{
+  color: #20B2AA;
+}
+
+.phone_view{
+  width: 92%;
+  margin-left: 4%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+}
+
+.phone_icon{
+  width: 18px;
+  height: 25px;
+  margin-left: 12px;
+}
+
+.input_code{
+  width: 60%;
+  height: 20px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.resend_btn{
+  width: 80px;
+  height: 25px;
+  border: 1px solid #20B2AA;
+  border-radius: 3px;
+  background-color: white;
+  color: #20B2AA;
+  font-size: 11px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.btn_next{
+  width: 60%;
+  height: 35px;
+  margin-left: 20%;
+  margin-top: 40px;
+  background-color: #20B2AA;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  padding-top: 8px;
+}
+
+.login_tip{
+  width: 100%;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  font-size: 12px;
+
+}
+.tip_btn{
+  color: #20B2AA;
+}
+
